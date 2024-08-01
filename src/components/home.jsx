@@ -1,11 +1,11 @@
 import Section from "./section.component"
 import P from "./AnimatedText"
-import homebackground from "../assets/Colored Shapes2.svg"
+// import homebackground from "../assets/Colored Shapes2.svg"
 import myImage from "../assets/myImage.jpg"
 
 const Home = () => {
     return (
-        <Section path={homebackground} className="flex flex-row items-center justify-center gap-[100px]">
+        <Section className="bg-[url('/src/assets/Colored-Shapes2.svg')] bg-fixed h-screen bg-cover flex flex-row items-center justify-center gap-[100px]">
             <div className='text-center'>
                 <div className='inline-block'>
                     <P className={'animate-typewriter1 text-black'}>Hi everyone, my name is</P>
@@ -25,6 +25,7 @@ const Home = () => {
                     <img src={myImage} alt="kanhaiya" className='' />
                 </div>
             </div>
+            <div className="bg-[url('/src/assets/layered-waves-haikei2.svg')] bg-cover w-full absolute bottom-0 h-[70px]"></div>
 
         </Section>
     )
