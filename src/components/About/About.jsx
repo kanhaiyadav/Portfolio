@@ -35,10 +35,10 @@ const About = () => {
                         <Button>Contact Me</Button>
                     </div>
                     <div className='flex gap-5'>
-                        <RoundIcon linkto={'https://www.linkedin.com/in/kanhaiya2004yadav/'} className="hover:bg-[#0077B5] group"><FaLinkedinIn className='text-3xl text-white group-hover:text-white' /></RoundIcon>
-                        <RoundIcon linkto={'https://github.com/kanishy'} className="hover:bg-black"><PiGithubLogoFill className='text-3xl text-white' /></RoundIcon>
-                        <RoundIcon linkto={'https://www.facebook.com/profile.php?id=61563497158287'} className="hover:bg-[#1877F2]"><FaFacebookF className='text-3xl text-white' /></RoundIcon>
-                        <RoundIcon linkto={'https://stackoverflow.com/users/22740986'} className="group hover:bg-white"><ImStackoverflow className='text-3xl text-white group-hover:text-[#F58025]' /></RoundIcon>
+                        <RoundIcon linkto={'https://www.linkedin.com/in/kanhaiya2004yadav/'} className="hover:scale-110 bg-[#0077B5] group"><FaLinkedinIn className='text-3xl text-white group-hover:text-white' /></RoundIcon>
+                        <RoundIcon linkto={'https://github.com/kanishy'} className="hover:scale-110 bg-white"><PiGithubLogoFill className='text-3xl text-black' /></RoundIcon>
+                        <RoundIcon linkto={'https://www.facebook.com/profile.php?id=61563497158287'} className="hover:scale-110 bg-[#1877F2]"><FaFacebookF className='text-3xl text-white' /></RoundIcon>
+                        <RoundIcon linkto={'https://stackoverflow.com/users/22740986'} className="group hover:scale-110 bg-white"><ImStackoverflow className='text-3xl text-[#F58025]' /></RoundIcon>
                     </div>
                 </div>
             </div>

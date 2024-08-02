@@ -14,7 +14,7 @@ const SkillCard = ({ imgPath, name, progress, exp, imgStyle, ...otherProps }) =>
         progressColor = '#00b7ff';
     }
     return (
-        <div className="shrink-0 skill-card flex gap-3 w-[400px] h-[125px] p-3 rounded-xl shadow-[6px_6px_0px_3px_rgba(0,0,0,1)]" {...otherProps}>
+        <div className="shrink-0 skill-card flex gap-3 w-[400px] h-[125px] p-3 rounded-xl shadow-[8px_8px_0px_1px_rgba(0,0,0,1)]" {...otherProps}>
             <div className="h-full" style={imgStyle}>
                 <img src={imgPath} alt={name} className="h-full rounded-xl" />
             </div>

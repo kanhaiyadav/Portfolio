@@ -3,6 +3,7 @@ div#root{
     height: 100%;
     color: #a9b68d;
     overflow-x: hidden;
+    /* color: #484848; */
 }
 body{
     overflow-x: hidden;

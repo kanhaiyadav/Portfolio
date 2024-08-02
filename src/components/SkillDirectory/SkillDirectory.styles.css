@@ -22,3 +22,6 @@
     animation: scroll-x 20s linear infinite; /* Adjust duration as needed */
     animation-direction: alternate;
 }
+.scroll-wrapper:hover {
+    animation-play-state: paused;
+}
