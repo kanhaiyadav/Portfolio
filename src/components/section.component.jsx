@@ -1,6 +1,6 @@
 const Section = ({children, className }) => {
     return (
-        <section className={`w-full bg-no-repeat ${className}`} style={{
+        <section className={`overflow-x-hidden w-screen bg-no-repeat ${className}`} style={{
         }}>
             {children}
         </section>

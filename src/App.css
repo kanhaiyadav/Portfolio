@@ -4,7 +4,12 @@ div#root{
     color: #a9b68d;
     overflow-x: hidden;
 }
-
+body{
+    overflow-x: hidden;
+}
+.hide-x-scrollbar::-webkit-scrollbar {
+    display: none;
+}
 ::-webkit-scrollbar {
         width: 8px;
         height: 5px;
