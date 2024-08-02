@@ -1,5 +1,6 @@
 export const webDev = {
     title: 'Web Development',
+    icon: '/src/assets/hosting.png',
     Skills: [
         {
             imgPath: 'src/assets/react.png',
@@ -67,6 +68,7 @@ export const webDev = {
 
 export const programmingLanguages = {
     title: 'Programming Languages',
+    icon: '/src/assets/coding.png',
     Skills: [
         {
             imgPath: '/src/assets/python.png',
@@ -101,6 +103,7 @@ export const programmingLanguages = {
 
 export const tools = {
     title: 'Tools',
+    icon: '/src/assets/technology.png',
     Skills: [
         {
             imgPath: '/src/assets/social.png',
