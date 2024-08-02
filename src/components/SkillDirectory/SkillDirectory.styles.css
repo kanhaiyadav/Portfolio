@@ -1,0 +1,24 @@
+.hide-x-scrollbar {
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+}
+
+.hide-x-scrollbar::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+
+@keyframes scroll-x {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.scroll-wrapper {
+    display: flex;
+    width: 200%; /* Adjust based on the number of SkillCards */
+    animation: scroll-x 20s linear infinite; /* Adjust duration as needed */
+    animation-direction: alternate;
+}

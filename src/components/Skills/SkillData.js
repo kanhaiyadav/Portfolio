@@ -109,13 +109,20 @@ export const tools = {
             imgPath: '/src/assets/social.png',
             name: 'Git',
             progress: 70,
-            exp: 2,
+            exp: 1,
             style: { '--card-color': '#1f8b2a' }
         },
         {
             imgPath: '/src/assets/Postman.png',
             name: 'Postman',
             progress: 73,
+            exp: 1,
+            style: { '--card-color': '#1f8b2a' }
+        },
+        {
+            imgPath: '/src/assets/github.png',
+            name: 'GitHub',
+            progress: 75,
             exp: 2,
             style: { '--card-color': '#1f8b2a' }
         }
