@@ -53,6 +53,7 @@ export default {
                 'Open-sans': ['Open Sans', 'sans-serif'],
                 'Poppins': ['Poppins', 'sans-serif'],
                 'Rowdies': ['Rowdies', 'cursive'],
+                'Playwrite1': ['Playwrite PE', 'cursive'],
             },
         },
         plugins: [],
