@@ -1,6 +1,42 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { web, python } from "./ProjectData";
 import ProjectDirectory from "../ProjectDirectory/ProjectDirectory";
+
+const WarningMessage = () => {
+    const [isVisible, setIsVisible] = useState(false);
+    const divRef = useRef(null);
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setIsVisible(true);
+                    observer.disconnect();
+                }
+                // else {
+                //     setIsVisible(false);
+                // }
+            },
+            {
+                threshold: 1,
+            }
+        );
+
+        if (divRef.current) {
+            observer.observe(divRef.current);
+        }
+
+        return () => {
+            if (divRef.current) {
+                observer.unobserve(divRef.current);
+            }
+        };
+    }, []);
+    return (
+        <div className="inline-block">
+        <i ref={divRef} className={`${isVisible ? 'animate-typewriter5' : ''} whitespace-nowrap animate-typewriter1 text-white overflow-hidden inline-block`}>Okay, please don&apos;t laugh too hard 😅, but these are some basic Python projects I whipped up when I first learned to code 🐍. Think of them as my programming training wheels 🚲!</i>
+        </div>
+    )
+};
 
 const Projects = () => {
     const [data, setData] = useState(web);
@@ -26,6 +62,9 @@ const Projects = () => {
                     }
                 >Python</span>
             </nav>
+            {
+                data.name === "python" ? <WarningMessage /> : null
+            }
             <ProjectDirectory data={data} />
         </section>
     );

@@ -45,7 +45,8 @@ export default {
                 'typewriter1': 'typewriter 0.8s steps(23) 1',
                 'typewriter2': 'typewriter 0.7s steps(19) 0.45s 1 forwards',
                 'typewriter3': 'typewriter 0.6s steps(13) 0.45s 1 forwards',
-                'typewriter4': 'typewriter 0.8s steps(23) 1'
+                'typewriter4': 'typewriter 0.8s steps(23) 1',
+                'typewriter5': 'typewriter 1s steps(176) 1 forwards',
             },
             fontFamily: {
                 'sans': ['Poppins', 'sans-serif'],

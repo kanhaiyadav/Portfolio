@@ -9,7 +9,7 @@ const Home = () => {
             <div className='text-center'>
                 <div className='inline-block'>
                     <P className={'animate-typewriter1 text-black'}>Hi everyone, my name is</P>
-                </div>
+                </div>  
                 <h1 className='m-4 animate-bounce font-Rowdies text-7xl text-black'>Kanhaiya <br /> Yadav</h1>
                 <div className='inline-block'>
                     <P className={'animate-typewriter2 w-0 text-[#47cd7d] font-bold'}>I am a Passionate</P>

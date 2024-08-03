@@ -21,6 +21,7 @@
     width: 200%; /* Adjust based on the number of SkillCards */
     animation: scroll-x 20s linear infinite; /* Adjust duration as needed */
     animation-direction: alternate;
+    color: #ad7100;
 }
 .scroll-wrapper:hover {
     animation-play-state: paused;
