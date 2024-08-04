@@ -4,11 +4,12 @@ import { PiGithubLogoFill } from "react-icons/pi";
 import RoundIcon from '../RoundIcons';
 import { FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
 import { ImStackoverflow } from 'react-icons/im';
+import { Link } from 'react-scroll';
 
 const About = () => {
     return (
-        <section id='about' className="overflow-x-hidden min-w-screen bg-no-repeat bg-[url('/src/assets/stacked-waves-haikei.svg')] bg-cover flex flex-col items-center justify-center h-screen relative bg-position">
-            <div className='w-[70%]'>
+        <section id='about' className="overflow-x-hidden min-w-screen bg-no-repeat bg-[url('/src/assets/stacked-waves-haikei.svg')] bg-cover flex flex-col items-center justify-center h-screen relative bg-position p-10">
+            <div className='max-w-[1100px]'>
                 <h1 className="text-7xl text-white font-Poppins">So who am i?</h1>
                 <div className='flex flex-col gap-3 font-Open-sans'>
                     <p className="text-xl text-white">
@@ -31,7 +32,7 @@ const About = () => {
                 <div className='flex justify-between items-center mt-5'>
                     <div className='flex items-center gap-5'>
                         <Button downloadLink={'/Kanhaiya Resume v4.pdf'} name={"Kanhaiya's resume"} className='text-white cursor-default hover:text-white'>My Resume</Button>
-                        <Button>Contact Me</Button>
+                        <Link to='contact' smooth duration={600}><Button>Contact Me</Button></Link>
                     </div>
                     <div className='flex gap-5'>
                         <RoundIcon linkto={'https://www.linkedin.com/in/kanhaiya2004yadav/'} className="hover:scale-110 bg-[#0077B5] group"><FaLinkedinIn className='text-3xl text-white group-hover:text-white' /></RoundIcon>

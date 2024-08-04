@@ -3,7 +3,7 @@ import NavItem from "../NavItem/NavItem";
 import { Link } from "react-scroll";
 
 const Nav = () => {
-    const [index, setIndex] = useState('home');
+    const [index, setIndex] = useState('');
     return (
         <nav className="z-50 fixed top-[-10px] translate-x-[-50%] left-2/4  py-2 px-1.5 rounded-2xl my-8 outline outline-offset-4 outline-[3px] outline-[#037b0b]"
             style={{

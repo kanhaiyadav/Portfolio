@@ -1,6 +1,7 @@
 import P from "./AnimatedText"
 // import homebackground from "../assets/Colored Shapes2.svg"
-import myImage from "../assets/myImage.jpg"
+import myImage from "../assets/me4.png"
+import myImage2 from "../assets/me5.png"
 
 const Home = () => {
     return (
@@ -19,9 +20,10 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className='border-[20px] border-white bg-white rounded-3xl animate-imgBounce'>
-                <div className='w-80 h-80 object-cover rounded-3xl overflow-hidden box-content '>
-                    <img src={myImage} alt="kanhaiya" className='' />
+            <div className='drop-shadow-2xl animate-imgBounce group'>
+                <div className='w-80 h-80 object-cover overflow-hidden box-content rounded-2xl'>
+                    <img src={myImage} alt="kanhaiya" className='group-hover:hidden' />
+                    <img src={myImage2} alt="kanhaiya" className='' />
                 </div>
             </div>
             <div className="bg-[url('/src/assets/layered-waves-haikei2.svg')] bg-cover w-full absolute bottom-0 h-[70px]"></div>
