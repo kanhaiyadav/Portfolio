@@ -9,7 +9,7 @@ export default {
             keyframes: {
                 'typewriter': {
                     '0%': { width: '0' },
-                    '100%': { width: '100%'}
+                    '100%': { width: '100%' }
                 },
                 bounce: {
                     '0%': {
@@ -55,6 +55,9 @@ export default {
                 'Poppins': ['Poppins', 'sans-serif'],
                 'Rowdies': ['Rowdies', 'cursive'],
                 'Playwrite1': ['Playwrite PE', 'cursive'],
+                'Karsten': ['Karsten ExtraBold Alt', 'cursive'],
+                'Abril-Fatface': ['Abril Fatface', 'cursive'],
+                'Great-Vibes': ['Great Vibes', 'cursive'],
             },
         },
         plugins: [],
