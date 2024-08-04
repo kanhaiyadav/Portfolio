@@ -1,5 +1,4 @@
 import './About.styles.css';
-import Section from '../section.component';
 import Button from '../button';
 import { PiGithubLogoFill } from "react-icons/pi";
 import RoundIcon from '../RoundIcons';
@@ -8,7 +7,7 @@ import { ImStackoverflow } from 'react-icons/im';
 
 const About = () => {
     return (
-        <Section className="bg-[url('/src/assets/stacked-waves-haikei.svg')] bg-cover flex flex-col items-center justify-center h-screen relative bg-position">
+        <section id='about' className="overflow-x-hidden min-w-screen bg-no-repeat bg-[url('/src/assets/stacked-waves-haikei.svg')] bg-cover flex flex-col items-center justify-center h-screen relative bg-position">
             <div className='w-[70%]'>
                 <h1 className="text-7xl text-white font-Poppins">So who am i?</h1>
                 <div className='flex flex-col gap-3 font-Open-sans'>
@@ -43,7 +42,7 @@ const About = () => {
                 </div>
             </div>
 
-        </Section>
+        </section>
     );
 };
 

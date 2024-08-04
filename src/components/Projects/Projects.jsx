@@ -41,7 +41,7 @@ const WarningMessage = () => {
 const Projects = () => {
     const [data, setData] = useState(web);
     return (
-        <section className={"min-h-screen flex flex-col gap-10 items-center  p-10"} style={{
+        <section id="projects" className={"min-h-screen flex flex-col gap-10 items-center  p-10"} style={{
             background: 'linear-gradient(#ff7700 0%, #ffd800 100%)'
         }}>
             <nav>
