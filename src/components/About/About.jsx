@@ -35,7 +35,7 @@ const About = () => {
 
                 <div className='flex flex-col md:flex-row gap-10 justify-between items-center mt-5'>
                     <div className='flex items-center gap-5'>
-                        <Button downloadLink={'/Kanhaiya Resume v4.pdf'} name={"Kanhaiya's resume"} className='text-white cursor-default hover:text-white'>My Resume</Button>
+                        <a href={'/Kanhaiya Resume v4.pdf'} download={"Kanhaiya's resume"} className='flex items-center gap-2 cursor-default bg-[#aa00aa] text-white hover:text-white rounded-lg p-3 shadow-[5px_5px_0px_1px_rgba(0,0,0)] hover:bg-blue-600 hover:scale-110 transition-[transform] border-2 border-black text-lg'>My Resume</a>
                         <Link to='contact' smooth duration={600}><Button>Contact Me</Button></Link>
                     </div>
                     <div className='flex gap-10'>

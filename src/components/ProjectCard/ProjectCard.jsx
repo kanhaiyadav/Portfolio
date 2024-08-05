@@ -40,8 +40,8 @@ const ProjectCard = ({ project }) => {
             </div>
             <div>
                 <div className="flex items-center gap-2 mt-2">
-                    <div className="w-[40px] h-[40px] rounded-full p-1 shadow-[1px_1px_4px_2px_rgba(0,0,0,0.9)]">
-                        <img src={imgPath} alt="icon" className="h-full" />
+                    <div className="w-[40px] h-[40px] rounded-full overflow-hidden p-1 shadow-[1px_1px_4px_2px_rgba(0,0,0,0.9)]">
+                        <img src={imgPath} alt="icon" className="h-full rounded-full" />
                     </div>
                     <h2 className="text-3xl font-semibold text-black">{title}</h2>
                 </div>
@@ -49,9 +49,11 @@ const ProjectCard = ({ project }) => {
                     <p className="text-ellipsis-custom text-lg text-white font-Poppins">{description}</p>
                 </div>
                 <div className="flex gap-2 justify-evenly">
-                    <Button><span>Features</span></Button>
-                    <Button downloadLink={preview}><span>Preview</span></Button>
-                    <Button downloadLink={source}><span>Source</span></Button>
+                    <Button onClick={() => {
+                        alert("This is yet to be added")
+                    }}><span>Features</span></Button>
+                    <Button downloadLink={preview}><a href={preview} target="_blank" rel="noreferrer" className="text-white hover:text-white">Preview</a></Button>
+                    <Button downloadLink={source} ><a href={source} target="_blank" rel="noreferrer" className="text-white hover:text-white">Source</a></Button>
                 </div>
             </div>
 

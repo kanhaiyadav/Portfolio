@@ -29,7 +29,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div className='drop-shadow-2xl animate-imgBounce group object-cover overflow-hidden box-content rounded-2xl'
+                <div className='drop-shadow-2xl animate-imgBounce group object-cover overflow-hidden box-content rounded-2xl shadow-[8px_8px_0px_2px_rgba(0,0,0,1)]'
                     style={{
                         width: 'clamp(250px,22vw, 500px)',
                         height: 'clamp(250px, 22vw, 500px)',

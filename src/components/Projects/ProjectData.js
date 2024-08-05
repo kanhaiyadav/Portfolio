@@ -11,7 +11,7 @@ export const web = {
         },
         {
             path: '/src/assets/portfolio.png',
-            imgPath: '/src/assets/favicon.ico',
+            imgPath: '/src/assets/myLogo.jpeg',
             title: 'My Portfolio',
             description: 'A simple portfolio website with beautiful and responsive design.',
             source: 'https://github.com/kanishy/Portfolio',
