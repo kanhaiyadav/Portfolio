@@ -17,7 +17,7 @@ const About = () => {
                 >So who am i?</h1>
                 <div className='flex flex-col gap-3 font-Open-sans'>
                     <p className="text-[15px] md:text-lg lg:text-xl text-white">
-                        Hello! I’m Kanhaiya Yadav, a passionate Full Stack Web Developer currently pursuing 
+                        Hello! I’m Kanhaiya Yadav, a passionate Full Stack Web Developer currently pursuing
                         <span className='font-bold text-[#FFD700]'> B.Tech in Computer Science and Engineering</span>, specializing in data science. Expected to
                         graduate in 2026, I am deeply immersed in the world of web development, particularly
                         with the <span className='font-bold text-[#FFD700]'> MERN (MongoDB, Express.js, React, Node.js)</span> stack.</p>
@@ -36,7 +36,7 @@ const About = () => {
                 <div className='flex flex-col md:flex-row gap-10 justify-between items-center mt-5'>
                     <div className='flex items-center gap-5'>
                         <a href={'/Kanhaiya Resume v4.pdf'} download={"Kanhaiya's resume"} className='flex items-center gap-2 cursor-default bg-[#aa00aa] text-white hover:text-white rounded-lg p-3 shadow-[5px_5px_0px_1px_rgba(0,0,0)] hover:bg-blue-600 hover:scale-110 transition-[transform] border-2 border-black text-lg'>My Resume</a>
-                        <Link to='contact' smooth duration={600}><Button>Contact Me</Button></Link>
+                        <Link to='contact' smooth duration={600}><Button className={'bg-[#aa00aa] hover:bg-blue-500'}>Contact Me</Button></Link>
                     </div>
                     <div className='flex gap-10'>
                         <RoundIcon linkto={'https://www.linkedin.com/in/kanhaiya2004yadav/'} className="hover:scale-110 bg-[#0077B5] group"><FaLinkedinIn className='text-3xl text-white group-hover:text-white' /></RoundIcon>

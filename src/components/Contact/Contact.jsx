@@ -23,7 +23,7 @@ const Contact = () => {
                     </div>
                     <Button
                         onClick={handleCopy}
-                        className={"bg-[#ff0000]"}
+                        className={"bg-[#ff0000] hover:bg-[tomato]"}
                     >Copy Email</Button>
                 </div>
                 <ContactForm />
