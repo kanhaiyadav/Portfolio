@@ -23,13 +23,15 @@ const ProjectCard = ({ project }) => {
             }
         );
 
+        const reference = divRef.current;
+
         if (divRef.current) {
             observer.observe(divRef.current);
         }
 
         return () => {
-            if (divRef.current) {
-                observer.unobserve(divRef.current);
+            if (reference) {
+                observer.unobserve(reference);
             }
         };
     }, []);
