@@ -14,7 +14,7 @@ export default {
                 bounce: {
                     '0%': {
                         transform: 'scale(1.5)',
-                        visiblity: 'hidden'
+                        visibility: 'hidden'
                     },
                     '100%': {
                         transform: 'scale(1)',
