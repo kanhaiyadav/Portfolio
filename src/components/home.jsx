@@ -1,11 +1,11 @@
 import P from "./AnimatedText"
 // import homebackground from "../assets/Colored Shapes2.svg"
-import myImage from "../assets/me4.png"
-import myImage2 from "../assets/me5.png"
+import myImage from "/me4.png"
+import myImage2 from "/me5.png"
 
 const Home = () => {
     return (
-        <section id="home" className="overflow-x-hidden min-w-screen bg-no-repeat bg-[url('/src/assets/Colored-Shapes2.svg')] bg-fixed min-h-screen bg-cover flex flex-row items-center justify-center  p-2xl">
+        <section id="home" className="overflow-x-hidden min-w-screen bg-no-repeat bg-[url('/Colored-Shapes2.svg')] bg-fixed min-h-screen bg-cover flex flex-row items-center justify-center  p-2xl">
             <div className="flex flex-col-reverse min-[680px]:flex-row items-center justify-center md:border-blue-500"
                 style={{
                     gap: 'clamp(20px, 8vw, 150px)',
@@ -39,7 +39,7 @@ const Home = () => {
                         <img src={myImage2} alt="kanhaiya" className='' />
                 </div>
             </div>
-            <div className="bg-[url('/src/assets/layered-waves-haikei2.svg')] bg-cover w-full absolute bottom-0 h-[70px]"></div>
+            <div className="bg-[url('/layered-waves-haikei2.svg')] bg-cover w-full absolute bottom-0 h-[70px]"></div>
 
         </section>
     )

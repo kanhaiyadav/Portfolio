@@ -8,7 +8,7 @@ import { Link } from 'react-scroll';
 
 const About = () => {
     return (
-        <section id='about' className="overflow-x-hidden min-w-screen bg-no-repeat bg-[url('/src/assets/stacked-waves-haikei.svg')] bg-cover flex flex-col items-center justify-center min-h-screen relative bg-position p-10">
+        <section id='about' className="overflow-x-hidden min-w-screen bg-no-repeat bg-[url('/stacked-waves-haikei.svg')] bg-cover flex flex-col items-center justify-center min-h-screen relative bg-position p-10">
             <div className='max-w-[1100px]'>
                 <h1 className="text-white font-Poppins"
                     style={{
