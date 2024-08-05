@@ -49,11 +49,11 @@ const ProjectCard = ({ project }) => {
                     <p className="text-ellipsis-custom text-lg text-white font-Poppins">{description}</p>
                 </div>
                 <div className="flex gap-2 justify-evenly">
-                    <Button onClick={() => {
+                    <Button className={`bg-[#FFC700] hover:bg-[#FFF455] text-black hover:text-black`} onClick={() => {
                         alert("This is yet to be added")
-                    }}><span>Features</span></Button>
-                    <Button downloadLink={preview}><a href={preview} target="_blank" rel="noreferrer" className="text-white hover:text-white">Preview</a></Button>
-                    <Button downloadLink={source} ><a href={source} target="_blank" rel="noreferrer" className="text-white hover:text-white">Source</a></Button>
+                    }}><span className="text-black hover:text-black font-semibold">Features</span></Button>
+                    <Button className={`bg-[#40A578] hover:bg-[#9DDE8B] text-black`}><a href={preview} target="_blank" rel="noreferrer" className="text-black hover:text-black">Preview</a></Button>
+                    <Button className={`bg-[#9195F6] hover:bg-[#B7C9F2] text-black`}><a href={source} target="_blank" rel="noreferrer" className="text-black hover:text-black">Source</a></Button>
                 </div>
             </div>
 

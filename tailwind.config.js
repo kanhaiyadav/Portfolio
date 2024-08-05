@@ -6,6 +6,9 @@ export default {
     ],
     theme: {
         extend: {
+            screens: {
+                'min-880px': '880px',
+            },
             keyframes: {
                 'typewriter': {
                     '0%': { width: '0' },

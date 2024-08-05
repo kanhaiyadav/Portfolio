@@ -1,6 +1,7 @@
 import ContactForm from "../ContactForm/ContactForm";
 import './Contact.styles.css';
 import meetUp from '../../assets/meetup.svg';
+import Button from "../button";
 
 const Contact = () => {
     const handleCopy = () => {
@@ -13,18 +14,17 @@ const Contact = () => {
             });
     };
     return (
-        <section id="contact" className={"overflow-x-hidden min-w-screen bg-no-repeat bg-[url('/src/assets/flat-mountains.svg')] bg-cover h-screen flex items-center justify-center p-10"}>
-            <div className="main h-[80%] w-[80%] md:bg-[#ffffffe4] flex items-center justify-between rounded-2xl mt-20">
-                <div className="relative flex-1 h-full min-h-[600px] hidden md:block"
-                    style={{
-                        width: 'clamp(250px, 8vw, 800px)',
-                    }}
-                >
-                    <h2 className="absolute left-[20%] top-[18%] font-Playwrite1 text-xl text-black lg:hidden">Let&apos;s have a chat</h2>
-                    <img src={meetUp} alt="meet up" className="h-full" />
-                    <p className="absolute left-[28%] bottom-[13%] text-xl text-white bg-blue-600 rounded-lg p-3 lg:hidden active:scale-95 cursor-default border-2 border-black"
+        <section id="contact" className={"overflow-hidden min-w-screen bg-no-repeat bg-[url('/src/assets/flat-mountains.svg')] bg-cover h-screen flex items-center justify-center pt-10 pb-10"}>
+            <div className="main h-[90%] w-[80%] min-[880px]:bg-[#ffffffe4] flex items-center justify-center min-880px:justify-between rounded-2xl mt-20">
+                <div className="flex-1 justify-center gap-5 items-center h-full flex-col hidden min-[880px]:flex pt-5 pb-5">
+                    <h2 className="flex-0 font-Playwrite1 text-2xl text-black">Let&apos;s have a chat</h2>
+                    <div className="w-[75%] min-w-[300px] max-w-[450px]">
+                        <img src={meetUp} alt="meet up" className="w-full" />
+                    </div>
+                    <Button
                         onClick={handleCopy}
-                    >Copy Email</p>
+                        className={"bg-[#ff0000]"}
+                    >Copy Email</Button>
                 </div>
                 <ContactForm />
             </div>
