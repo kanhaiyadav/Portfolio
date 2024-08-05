@@ -35,13 +35,13 @@ const ProjectCard = ({ project }) => {
     }, []);
     return (
         <div ref={divRef} className={`fade-in ${isVisible ? 'visible' : ''} max-w-[350px] min-w-[290px] project-card flex-1 flex-col gap-5 bg-[tomato] p-5 box-content rounded-2xl shadow-[10px_10px_0px_1px_rgb(0,0,0)] border-4 border-black`}>
-            <div className="w-full h-[179px] rounded-2xl overflow-hidden border-2 border-black">
+            <div className="w-full h-[179px] rounded-2xl overflow-hidden border-2 border-black object-cover">
                 <img src={path} alt="todo_project" className="w-full" />
             </div>
             <div>
                 <div className="flex items-center gap-2 mt-2">
                     <div className="w-[40px] h-[40px] rounded-full p-1 shadow-[1px_1px_4px_2px_rgba(0,0,0,0.9)]">
-                        <img src={imgPath} alt="icon" className="w-full h-full" />
+                        <img src={imgPath} alt="icon" className="h-full" />
                     </div>
                     <h2 className="text-3xl font-semibold text-black">{title}</h2>
                 </div>
