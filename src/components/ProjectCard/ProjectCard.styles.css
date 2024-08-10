@@ -1,6 +1,6 @@
 .text-ellipsis-custom {
   display: -webkit-box;
-  -webkit-line-clamp: 2; /* Change this value to the number of lines you want */
+  -webkit-line-clamp: 4; /* Change this value to the number of lines you want */
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -10,14 +10,24 @@
   -webkit-line-clamp: unset; /* Removes the line clamp on hover */
 }
 
-@keyframes fadeIn {
+@keyframes fadeInEven {
   from {
     opacity: 0;
-    transform: translateY(40px);
+    transform: translateX(200px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
+  }
+}
+@keyframes fadeInOdd {
+  from {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
@@ -26,9 +36,26 @@
   transition: opacity 0.5s, transform 0.5s;
 }
 
-.fade-in.visible {
+.fade-in.visible:nth-child(even) {
   opacity: 1;
   transform: translateY(0);
-  animation: fadeIn 0.5s ease-in-out forwards;
+  animation: fadeInEven 0.5s ease-in-out forwards;
   color: #ff9040;
+}
+
+.fade-in.visible:nth-child(odd) {
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeInOdd 0.5s ease-in-out forwards;
+  color: #ff9040;
+}
+
+.project-card {
+    overflow: hidden;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+.project-card::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
 }
