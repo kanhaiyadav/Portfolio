@@ -36,14 +36,14 @@
   transition: opacity 0.5s, transform 0.5s;
 }
 
-.fade-in.visible:nth-child(even) {
+.fade-in.visible:nth-child(odd) {
   opacity: 1;
   transform: translateY(0);
   animation: fadeInEven 0.5s ease-in-out forwards;
   color: #ff9040;
 }
 
-.fade-in.visible:nth-child(odd) {
+.fade-in.visible:nth-child(even) {
   opacity: 1;
   transform: translateY(0);
   animation: fadeInOdd 0.5s ease-in-out forwards;

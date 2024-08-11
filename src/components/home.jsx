@@ -6,7 +6,7 @@ import myImage2 from "/me5.png"
 
 const Home = () => {
     return (
-        <section id="home" className="overflow-x-hidden min-w-screen bg-no-repeat bg-[url('/Colored-Shapes2.svg')] bg-center bg-fixed min-h-screen bg-cover flex flex-row items-center justify-center  p-2xl">
+        <section id="home" className="relative overflow-x-hidden min-w-screen bg-no-repeat bg-[url('/Colored-Shapes2.svg')] bg-center bg-fixed min-h-screen bg-cover flex flex-row items-center justify-center  p-2xl">
             <div className="flex flex-col-reverse min-[680px]:flex-row items-center justify-center md:border-blue-500"
                 style={{
                     gap: 'clamp(20px, 8vw, 150px)',
@@ -41,7 +41,6 @@ const Home = () => {
                 </div>
             </div>
             <div className="bg-[url('/layered-waves-haikei2.svg')] bg-cover w-full absolute bottom-0 h-[70px]"></div>
-
         </section>
     )
 }

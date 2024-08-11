@@ -39,7 +39,7 @@ const ProjectCard = ({ project }) => {
         };
     }, []);
     return (
-        <div ref={divRef} className={`fade-in ${isVisible ? 'visible' : ''} project-card flex flex-col flex-1 gap-5 bg-[#fe6263] p-5 box-content rounded-3xl shadow-[10px_10px_0px_1px_rgb(0,0,0)] border-[3px] border-black max-w-[600px] max-h-[380px] overflow-auto even:ml-auto`}>
+        <div ref={divRef} className={`fade-in ${isVisible ? 'visible' : ''} project-card flex flex-col flex-1 gap-5 bg-[#fe6263] p-5 box-content rounded-3xl shadow-[10px_10px_0px_1px_rgb(0,0,0)] border-[3px] border-black max-w-[600px] max-h-[380px] overflow-auto odd:ml-auto`}>
             <div className="flex gap-5 w-full">
                 <div className={`shrink-0 w-[260px] h-[160px] rounded-2xl overflow-hidden border-2 border-black group`}
                     style={{
