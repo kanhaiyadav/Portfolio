@@ -1,7 +1,7 @@
 import './About.styles.css';
-import Button from '../button';
+import Button from '../button/button';
 import { PiGithubLogoFill } from "react-icons/pi";
-import RoundIcon from '../RoundIcons';
+import RoundIcon from '../rounded-button/RoundIcons';
 import { FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
 import { ImStackoverflow } from 'react-icons/im';
 import { Link } from 'react-scroll';
@@ -38,11 +38,11 @@ const About = () => {
                         <a href={'/Kanhaiya Resume v4.pdf'} download={"Kanhaiya's resume"} className='flex items-center gap-2 cursor-default bg-[#aa00aa] text-white hover:text-white rounded-lg p-3 shadow-[5px_5px_0px_1px_rgba(0,0,0)] hover:bg-blue-600 hover:scale-110 transition-[transform] border-2 border-black text-lg'>My Resume</a>
                         <Link to='contact' smooth duration={600}><Button className={'bg-[#aa00aa] hover:bg-blue-500'}>Contact Me</Button></Link>
                     </div>
-                    <div className='flex gap-10'>
-                        <RoundIcon linkto={'https://www.linkedin.com/in/kanhaiya2004yadav/'} className="hover:scale-110 bg-[#0077B5] group"><FaLinkedinIn className='text-3xl text-white group-hover:text-white' /></RoundIcon>
-                        <RoundIcon linkto={'https://github.com/kanishy'} className="hover:scale-110 bg-white"><PiGithubLogoFill className='text-3xl text-black' /></RoundIcon>
-                        <RoundIcon linkto={'https://www.facebook.com/profile.php?id=61563497158287'} className="hover:scale-110 bg-[#1877F2]"><FaFacebookF className='text-3xl text-white' /></RoundIcon>
-                        <RoundIcon linkto={'https://stackoverflow.com/users/22740986'} className="group hover:scale-110 bg-white"><ImStackoverflow className='text-3xl text-[#F58025]' /></RoundIcon>
+                    <div className='button-container flex gap-10'>
+                        <RoundIcon linkto={'https://www.linkedin.com/in/kanhaiya2004yadav/'} className="bg-[#0077B5] group"><FaLinkedinIn className='text-3xl text-white group-hover:text-white' /></RoundIcon>
+                        <RoundIcon linkto={'https://github.com/kanishy'} className=" bg-white"><PiGithubLogoFill className='text-3xl text-black' /></RoundIcon>
+                        <RoundIcon linkto={'https://www.facebook.com/profile.php?id=61563497158287'} className="bg-[#1877F2]"><FaFacebookF className='text-3xl text-white' /></RoundIcon>
+                        <RoundIcon linkto={'https://stackoverflow.com/users/22740986'} className="group bg-white"><ImStackoverflow className='text-3xl text-[#F58025]' /></RoundIcon>
                     </div>
                 </div>
             </div>
