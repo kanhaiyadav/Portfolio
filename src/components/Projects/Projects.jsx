@@ -41,7 +41,7 @@ const WarningMessage = () => {
 const Projects = () => {
     const [data, setData] = useState(web);
     return (
-        <section id="projects" className={"relative min-h-screen flex flex-col gap-10 items-center  justify-center pt-10 pb-10 bg-cover bg-[#ffefd6]"}
+        <section id="projects" className={"relative min-h-screen flex flex-col gap-10 items-center  justify-center p-10 bg-cover bg-[#ffefd6]"}
         >
             <nav className="z-100 bg-[#ff7700] absolute w-full h-[70px] pt-5 pl-5 top-0 border-black border-b-2 flex gap-5 overflow-visible">
                 <span className="h-[50px] p-5 pb-3 pt-2 rounded-t-lg text-3xl text-black cursor-default" onClick={() => { setData(web) }}

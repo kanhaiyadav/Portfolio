@@ -36,7 +36,7 @@ export const python = {
         {
             path: '/pomodoro.png',
             imgPath: '/python.png',
-            title: 'Pomodoro Timer',
+            title: 'Pomodoro',
             description: 'A simple pomodoro timer for managing work and break time.',
             preview: 'https://drive.google.com/file/d/18p-ybkm0llmPDIHfUISxcFxqoBMYI56V/view?usp=sharing',
             source: 'https://github.com/kanishy/python_pomodoro_app',
@@ -72,7 +72,7 @@ export const python = {
         {
             path: '/tiktactoe.png',
             imgPath: '/python.png',
-            title: 'TikTacToe Game',
+            title: 'TikTacToe',
             description: 'A simple tik-tac-toe game for entertainment.',
             preview: 'https://drive.google.com/file/d/1t2kFUbytpsgmoSXsXWaZvnngjdkuBvZJ/view?usp=sharing',
             source: 'https://github.com/kanishy/python_tik_tac_toe_game',
