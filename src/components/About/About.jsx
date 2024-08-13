@@ -10,9 +10,9 @@ const About = () => {
     return (
         <section id='about' className="overflow-x-hidden min-w-screen bg-no-repeat bg-[url('/stacked-waves-haikei.svg')] bg-cover flex flex-col items-center justify-center md:min-h-screen relative bg-position p-10">
             <div className='max-w-[1100px]'>
-                <h1 className="text-white font-Poppins"
+                <h1 className="text-white font-Poppins text-[40px] sm:text-[50px]"
                     style={{
-                        fontSize: 'clamp(50px, 6vw, 100px)',
+                        fontSize: 'clamp(40px, 6vw, 100px)',
                     }}
                 >So who am i?</h1>
                 <div className='flex flex-col gap-3 font-Open-sans'>
