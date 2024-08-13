@@ -1,10 +1,10 @@
 .rounded-button{
     background-color: #3498db;
-    transition: transform 0.1s ease; /* Smooth transition */
+    transition: transform 0.15s ease; /* Smooth transition */
     transform-style: preserve-3d;
 }
 
 .rounded-button:hover {
-    transform: rotate(360deg) scale(1.1);
+    transform: rotate(360deg) scale(1.15);
     box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.9);
 }

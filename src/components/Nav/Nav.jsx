@@ -8,7 +8,7 @@ import { MdEmail } from "react-icons/md";
 const Nav = () => {
     const [index, setIndex] = useState('');
     return (
-        <nav className="z-50 fixed top-[-10px] translate-x-[-50%] left-2/4  py-2 px-1.5 rounded-2xl my-8 outline outline-offset-4 outline-[3px] outline-white"
+        <nav className="opacity-20 transition-all duration-200 hover:opacity-100 z-50 fixed top-[-10px] translate-x-[-50%] left-2/4  py-2 px-1.5 rounded-2xl my-8 outline outline-offset-4 outline-[3px] outline-white"
             style={{
                 background: 'linear-gradient(to right, #c54d20, yellow)'
             }}

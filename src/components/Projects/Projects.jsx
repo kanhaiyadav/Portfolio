@@ -42,8 +42,11 @@ const Projects = () => {
     const [data, setData] = useState(web);
     return (
         <section id="projects" className={"relative min-h-screen flex flex-col gap-10 items-center  justify-center p-10 bg-cover bg-[#ffefd6]"}
+            style={{
+                background: 'linear-gradient(#642d19, #00101c)'
+            }}
         >
-            <nav className="z-100 bg-[#00101c] absolute w-full h-[70px] pt-5 pl-5 top-0 border-white border-b-2 flex gap-5 overflow-visible">
+            <nav className="z-100 bg-[#642d19] absolute w-full h-[70px] pt-5 pl-5 top-0 border-white border-b-2 flex gap-5 overflow-visible">
                 <span className="h-[50px] p-5 pb-3 pt-2 rounded-t-lg text-3xl text-white cursor-default" onClick={() => { setData(web) }}
                     style={
                         data.name === "web" ? {

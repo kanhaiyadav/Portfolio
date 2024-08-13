@@ -1,6 +1,6 @@
 import ProjectCard from "../ProjectCard/ProjectCard";
 import './project-directory.css';
-// import { RiPlaneLine } from "react-icons/ri";
+import { RiPlaneLine } from "react-icons/ri";
 
 const ProjectDirectory = ({ data, className, ...otherProps }) => {
     const { projects } = data;
@@ -14,7 +14,7 @@ const ProjectDirectory = ({ data, className, ...otherProps }) => {
                         ))
                     }
                 </div>
-                <div id="airplane" className="sticky top-[300px] w-10"><img src="/airplane (1).png" alt="" className="w-full"/></div>
+                <div id="airplane" className="sticky top-[300px] w-10"><RiPlaneLine className="rotate-180 w-full text-5xl text-white ml-[1px]" /></div>
             </div>
             {
                 projects.map((project, index) => (

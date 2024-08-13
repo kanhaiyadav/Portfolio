@@ -39,9 +39,13 @@ const ProjectCard = ({ project }) => {
         };
     }, []);
     return (
-        <div ref={divRef} className={`fade-in ${isVisible ? 'visible' : ''} project-card flex flex-col mt-10 xl:mt-0 flex-1 gap-5 bg-[#fe6263] p-4 box-content rounded-3xl shadow-[10px_10px_0px_1px_rgb(0,0,0)] border-[3px] border-black max-w-[265px] md:max-w-[680px] xl:min-w-[510px] xl:w-[43%] max-h-[380px] overflow-auto xl:odd:ml-auto`}>
-            <div className="flex flex-col md:flex-row gap-5 w-full">
-                <div className={`shrink-0 w-[260px] h-[160px] rounded-2xl overflow-hidden border-2 border-black group`}
+        <div ref={divRef} className={`fade-in ${isVisible ? 'visible' : ''} project-card flex flex-col mt-10 xl:mt-0 flex-1 gap-5 p-4 box-content rounded-lg shadow-[10px_10px_0px_1px_rgb(0,0,0)] border-[3px] border-black max-w-[265px] md:max-w-[680px] xl:min-w-[510px] xl:w-[43%] max-h-[380px] overflow-auto xl:odd:ml-auto`}
+            style={{
+                background: 'linear-gradient(145deg, #00101c, #642d19)'
+            }}
+        >
+            <div className="z-10 flex flex-col md:flex-row gap-5 w-full">
+                <div className={`shrink-0 w-[260px] h-[160px] rounded-lg overflow-hidden border-2 border-black group`}
                     style={{
                         backgroundImage: `url(${path})`,
                         backgroundSize: 'cover',
@@ -54,10 +58,10 @@ const ProjectCard = ({ project }) => {
                 </div>
                 <div>
                     <div className="flex items-center gap-2 mt-2">
-                        <div className="w-[40px] h-[40px] rounded-full overflow-hidden p-1 shadow-[1px_1px_4px_2px_rgba(0,0,0,0.9)]">
+                            <div className="w-[40px] h-[40px] border-2 border-[#c54d20] rounded-full overflow-hidden p-1 shadow-[1px_1px_4px_2px_rgba(0,0,0,0.9)]">
                             <img src={imgPath} alt="icon" className="h-full rounded-full" />
                         </div>
-                        <h2 className="text-2xl font-semibold text-black">{title}</h2>
+                        <h2 className="text-2xl font-semibold text-[#c54d20]">{title}</h2>
                     </div>
                     <div className="text-container max-h-[110px] overflow-hidden  mb-3 hover:max-h-full transition-all duration-300">
                         <p className="text-ellipsis-custom text-lg text-white font-Poppins">{description}</p>

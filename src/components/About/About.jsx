@@ -8,7 +8,7 @@ import { Link } from 'react-scroll';
 
 const About = () => {
     return (
-        <section id='about' className="overflow-x-hidden min-w-screen bg-no-repeat bg-[url('/stacked-waves-haikei.svg')] bg-cover flex flex-col items-center justify-center min-h-screen relative bg-position p-10">
+        <section id='about' className="overflow-x-hidden min-w-screen bg-no-repeat bg-[url('/stacked-waves-haikei.svg')] bg-cover flex flex-col items-center justify-center md:min-h-screen relative bg-position p-10">
             <div className='max-w-[1100px]'>
                 <h1 className="text-white font-Poppins"
                     style={{
@@ -18,9 +18,9 @@ const About = () => {
                 <div className='flex flex-col gap-3 font-Open-sans'>
                     <p className="text-[15px] md:text-lg lg:text-xl text-white">
                         Hello! I’m Kanhaiya Yadav, a passionate Full Stack Web Developer currently pursuing
-                        <span className='font-bold text-[#FFD700]'> B.Tech in Computer Science and Engineering</span>, specializing in data science. Expected to
+                        <span className='font-bold text-[#c54d20]'> B.Tech in Computer Science and Engineering</span>, specializing in data science. Expected to
                         graduate in 2026, I am deeply immersed in the world of web development, particularly
-                        with the <span className='font-bold text-[#FFD700]'> MERN (MongoDB, Express.js, React, Node.js)</span> stack.</p>
+                        with the <span className='font-bold text-[#c54d20]'> MERN (MongoDB, Express.js, React, Node.js)</span> stack.</p>
                     <p className="text-[15px] md:text-lg lg:text-xl text-white">
                         I thrive on the excitement of learning new technologies and pushing the boundaries of
                         my skills. My journey into web development has been driven by a love for creating seam
@@ -39,7 +39,7 @@ const About = () => {
                         <Link to='contact' smooth duration={600}><Button>Contact Me</Button></Link>
                     </div>
                     <div className='button-container flex gap-10'>
-                        <RoundIcon linkto={'https://www.linkedin.com/in/kanhaiya2004yadav/'} className="bg-[#0077B5] group"><FaLinkedinIn className='text-3xl text-white group-hover:text-white' /></RoundIcon>
+                        <RoundIcon linkto={'https://www.linkedin.com/in/kanhaiya2004yadav/'} className="bg-[#0077B5] group"><FaLinkedinIn className='text-3xl text-white group-hover:text-white group-hover:rotate-' /></RoundIcon>
                         <RoundIcon linkto={'https://github.com/kanishy'} className=" bg-white"><PiGithubLogoFill className='text-3xl text-black' /></RoundIcon>
                         <RoundIcon linkto={'https://www.facebook.com/profile.php?id=61563497158287'} className="bg-[#1877F2]"><FaFacebookF className='text-3xl text-white' /></RoundIcon>
                         <RoundIcon linkto={'https://stackoverflow.com/users/22740986'} className="group bg-white"><ImStackoverflow className='text-3xl text-[#F58025]' /></RoundIcon>
