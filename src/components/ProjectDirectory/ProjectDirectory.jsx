@@ -36,7 +36,7 @@ const WarningMessage = () => {
     }, []);
     return (
         <div className="inline-block">
-            <i ref={divRef} className={`${isVisible ? 'animate-typewriter5' : ''} whitespace-nowrap animate-typewriter1 text-white overflow-hidden inline-block`}>Okay, please don&apos;t laugh too hard 😅, but these are some basic Python projects I whipped up when I first learned to code 🐍. Think of them as my programming training wheels 🚲!</i>
+            <i ref={divRef} className={`${isVisible ? 'animate-typewriter5' : ''} animate-typewriter1 text-white overflow-hidden inline-block h-[120px] sm:h-[70px] md:h-[50px] xl:h-5`}>Okay, please don&apos;t laugh too hard 😅, but these are some basic Python projects I whipped up when I first learned to code 🐍. Think of them as my programming training wheels 🚲!</i>
         </div>
     )
 };
@@ -48,7 +48,7 @@ const ProjectDirectory = ({ data, className, ...otherProps }) => {
     const { projects } = data;
     return (
         <>
-            <div className="flex items-center gap-5">
+            <div className="flex gap-5">
                 <h1 className="text-3xl font-Playwrite1 md:text-4xl text-[#c54d20]">{data.name}</h1>
                 <span className="h-8 w-8 text-white hover:scale-110 hover:bg-white hover:text-black transition duration-300 active:scale-90 shadow-[0px_0px_5px_2px_rgba(0,0,0,0.5)] rounded-full p-2 box-content"
                     onClick={() => setCount((prev) => {
