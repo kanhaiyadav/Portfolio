@@ -1,6 +1,4 @@
 import P from "./AnimatedText"
-// import homebackground from "../assets/Colored Shapes2.svg"
-
 import myImage from "/me4.png"
 import myImage2 from "/me5.png"
 

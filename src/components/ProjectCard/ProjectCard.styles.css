@@ -1,13 +1,15 @@
 .text-ellipsis-custom {
   display: -webkit-box;
   -webkit-line-clamp: 4; /* Change this value to the number of lines you want */
+  line-clamp:4;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .text-container:hover .text-ellipsis-custom {
-  -webkit-line-clamp: unset; /* Removes the line clamp on hover */
+  -webkit-line-clamp: unset;
+  line-clamp: unset;
 }
 
 @keyframes fadeInEven {

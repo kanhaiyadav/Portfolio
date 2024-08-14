@@ -48,15 +48,6 @@ const ProjectDirectory = ({ data, className, ...otherProps }) => {
     const { projects } = data;
     return (
         <>
-            <div className="h-1 flex justify-between  gap-3">
-                {
-                    allProjects.map((skill, index) => (
-                        <span key={index} className={`flex-1 cursor-pointer w-[10px] rounded-full ${index == count % 3 ? 'bg-[#c54d20]' : 'bg-white'}`}
-                            onClick={() => setCount(index)}
-                        ></span>
-                    ))
-                }
-            </div>
             <div className="flex items-center gap-5">
                 <h1 className="text-3xl font-Playwrite1 md:text-4xl text-[#c54d20]">{data.name}</h1>
                 <span className="h-8 w-8 text-white hover:scale-110 hover:bg-white hover:text-black transition duration-300 active:scale-90 shadow-[0px_0px_5px_2px_rgba(0,0,0,0.5)] rounded-full p-2 box-content"
@@ -84,6 +75,15 @@ const ProjectDirectory = ({ data, className, ...otherProps }) => {
                 {
                     projects.map((project, index) => (
                         <ProjectCard key={index} project={project} />
+                    ))
+                }
+            </div>
+            <div className="h-1 flex justify-between  gap-3">
+                {
+                    allProjects.map((skill, index) => (
+                        <span key={index} className={`flex-1 cursor-pointer w-[10px] rounded-full ${index == count % 3 ? 'bg-[#c54d20]' : 'bg-white'}`}
+                            onClick={() => setCount(index)}
+                        ></span>
                     ))
                 }
             </div>

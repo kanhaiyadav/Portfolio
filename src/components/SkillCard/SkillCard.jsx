@@ -39,8 +39,8 @@ const SkillCard = ({ imgPath, name, progress, imgStyle, ...otherProps }) => {
         };
     }, [Progress_bar]);
     return (
-        <div className="shrink-0 skill-card flex flex-col items-center gap-3 p-3 rounded-sm shadow-[0px_0px_10px_3px_rgba(0,0,0,0.5)] w-[150px] md:w-[200px]" {...otherProps}>
-            <div className="h-[80px] w-80px md:h-[100px] md:w-[100px]" style={imgStyle}>
+        <div className="shrink-0 skill-card flex flex-col items-center gap-3 p-3 rounded-sm shadow-[0px_0px_10px_3px_rgba(0,0,0,0.5)] w-[100px] sm:w-[150px] md:w-[200px]" {...otherProps}>
+            <div className="h-[60px] w-[60px] sm:h-[80px] sm:w-80px md:h-[100px] md:w-[100px]" style={imgStyle}>
                 <img src={imgPath} alt={name} className="h-full w-full rounded-xl" />
             </div>
             <div className="flex-1 flex flex-col justify-between w-full text-center">
