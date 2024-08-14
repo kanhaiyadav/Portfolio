@@ -98,7 +98,7 @@ const ContactForm = () => {
                         <Input value={value.name} name='name' type='text' placeholder='Your Name' required onChange={onChange} />
                         <Input value={value.email} name='email' type='email' placeholder='Your email' required onChange={onChange} />
                         <Textarea value={value.message} name='message' placeholder='Your message here ...' onChange={onChange} />
-                        <Button type="submit" className="flex items-center gap-2 bg-[#873a06] hover:bg-[#6e1987] cursor-default">Send Message <IoSend /></Button>
+                        <Button type="submit" className="flex items-center gap-2 bg-[#873a06] hover:bg-[#985c28] cursor-default">Send Message <IoSend /></Button>
                     </form>
             }
         </>
