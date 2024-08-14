@@ -21,7 +21,7 @@ const NavItem = ({ children, index, setIndex, name, ...props }) => {
         document.getElementById(name).scrollIntoView({ behavior: 'smooth' });
     }
     return (
-        <span {...props} className={`transition duration-700 flex items-center justify-center  gap-2 text-black border-2 border-transparent cursor-default hover:border-white px-1 md:px-2 py-1 md:py-0 rounded-xl hover ${index === name ? 'bg-white' : 'bg-transparent'}`}
+        <span {...props} className={`transition duration-300 flex items-center justify-center  gap-2 text-black border-2 border-transparent cursor-default hover:border-white px-1 md:px-2 py-1 md:py-0 rounded-xl hover ${index === name ? 'bg-white' : 'bg-transparent'}`}
             onClick={handleClick}
         >{children}</span>
     );
