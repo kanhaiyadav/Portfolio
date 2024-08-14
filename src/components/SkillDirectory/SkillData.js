@@ -6,6 +6,7 @@ export const webDev = {
             imgPath: '/react.png',
             name: 'React',
             progress: 85,
+            imgStyle: {borderRadius: '13px', border: '2px solid #00d8ff' }
         },
         {
             imgPath: '/nodejs.png',
@@ -13,14 +14,22 @@ export const webDev = {
             progress: 75,
             imgStyle: {
                 backgroundColor: 'white',
-                borderRadius: '20px'
+                borderRadius: '20px',
+                border: '3px solid #026e00',
+                padding: '5px'
             }
+        },
+        {
+            imgPath: '/Express.png',
+            name: 'EXPRESS',
+            progress: 70,
+            imgStyle: { borderRadius: '22px', backgroundColor: '#343434',paddingTop:'5px', border: '2px solid #fff' }
         },
         {
             imgPath: '/mySql.png',
             name: 'MySql',
             progress: 80,
-            imgStyle: { backgroundColor: 'white', borderRadius: '20px' }
+            imgStyle: { backgroundColor: 'white', borderRadius: '20px', border: '3px solid #01618b', padding:'2px' }
         },
         {
             imgPath: '/mongodb.png',
@@ -28,14 +37,22 @@ export const webDev = {
             progress: 60,
         },
         {
-            imgPath: '/Express.png',
-            name: 'EXPRESS',
+            imgPath: '/GraphQL.png',
+            name: 'GraphQL',
             progress: 70,
+            imgStyle: { backgroundColor: 'white', borderRadius: '20px', padding: '5px', border: '2px solid #e10098' }
+        },
+        {
+            imgPath: '/Socket.io.png',
+            name: 'Socket.io',
+            progress: 85,
+            imgStyle: { backgroundColor: 'white', borderRadius: '20px', padding: '5px', border:'3px solid black' }
         },
         {
             imgPath: '/tailwind.jpg',
             name: 'Tailwind',
-            progress: 60,
+            progress: 80,
+            imgStyle: { borderRadius: '13px', border: '3px solid #00d8ff' }
         },
         {
             imgPath: '/html.png',

@@ -5,6 +5,10 @@ import { useState } from "react";
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import Button from "./../button/button";
+import { PiGithubLogoFill } from "react-icons/pi";
+import RoundIcon from '../rounded-button/RoundIcons';
+import { FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
+import { ImStackoverflow } from 'react-icons/im';
 // import { ReactComponent as Loader } from '/loader.svg';
 
 
@@ -99,6 +103,12 @@ const ContactForm = () => {
                         <Input value={value.email} name='email' type='email' placeholder='Your email' required onChange={onChange} />
                         <Textarea value={value.message} name='message' placeholder='Your message here ...' onChange={onChange} />
                         <Button type="submit" className="flex text-lg items-center gap-2 bg-[#873a06] hover:bg-[#985c28] cursor-default">Send Message <IoSend /></Button>
+                        <div className='button-container flex gap-10 mt-2'>
+                            <RoundIcon linkto={'https://www.linkedin.com/in/kanhaiya2004yadav/'}><FaLinkedinIn /></RoundIcon>
+                            <RoundIcon linkto={'https://github.com/kanishy'}><PiGithubLogoFill /></RoundIcon>
+                            <RoundIcon linkto={'https://www.facebook.com/profile.php?id=61563497158287'}><FaFacebookF /></RoundIcon>
+                            <RoundIcon linkto={'https://stackoverflow.com/users/22740986'}><ImStackoverflow /></RoundIcon>
+                        </div>
                     </form>
             }
         </>
