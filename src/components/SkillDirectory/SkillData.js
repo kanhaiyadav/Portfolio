@@ -21,7 +21,7 @@ export const webDev = {
         },
         {
             imgPath: '/Express.png',
-            name: 'EXPRESS',
+            name: 'Express',
             progress: 70,
             imgStyle: { borderRadius: '22px', backgroundColor: '#343434',paddingTop:'5px', border: '2px solid #fff' }
         },
