@@ -57,7 +57,7 @@ const ContactForm = () => {
         <>
             {
                 submitted ?
-                    <div className="relative shrink w-[40%] min-w-[370px] sm:min-w-[500px] h-full flex flex-col items-center gap-5 bg-[#14172a] p-10">
+                    <div className="relative shrink w-full sm:w-[40%] min-w-[370px] sm:min-w-[500px] h-full flex flex-col items-center gap-5 bg-[#14172a] p-10">
                         {
                             loading ?
                                 <div className="flex flex-col items-center">
@@ -68,7 +68,7 @@ const ContactForm = () => {
                                     </div>
                                 </div>
                                 :
-                                <div className="flex flex-col items-center">
+                                <div className="flex flex-col items-center text-center">
                                     {
                                     success ?
                                     <>
@@ -93,12 +93,12 @@ const ContactForm = () => {
                         }
                     </div>
                     :
-                    <form ref={form} onSubmit={sendEmail} className="relative shrink w-[40%] min-w-[370px] sm:min-w-[500px] h-full flex flex-col items-center gap-5 bg-[#14172a] p-10">
+                    <form ref={form} onSubmit={sendEmail} className="relative shrink w-full sm:w-[40%] min-w-[370px] sm:min-w-[500px] h-full flex flex-col items-center gap-5 bg-[#14172a] p-10">
                         <h1 className="font-Abril-Fatface"><span className="text-6xl sm:text-7xl text-[rgba(255,255,255,0.3)]">Contact</span><span className="text-white font-Great-Vibes text-6xl sm:text-7xl">Me</span></h1>
                         <Input value={value.name} name='name' type='text' placeholder='Your Name' required onChange={onChange} />
                         <Input value={value.email} name='email' type='email' placeholder='Your email' required onChange={onChange} />
                         <Textarea value={value.message} name='message' placeholder='Your message here ...' onChange={onChange} />
-                        <Button type="submit" className="flex items-center gap-2 bg-[#390e46] hover:bg-[#6e1987] cursor-default">Send Message <IoSend /></Button>
+                        <Button type="submit" className="flex items-center gap-2 bg-[#873a06] hover:bg-[#6e1987] cursor-default">Send Message <IoSend /></Button>
                     </form>
             }
         </>
