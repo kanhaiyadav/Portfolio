@@ -23,14 +23,14 @@ const WarningMessage = () => {
                 threshold: 1,
             }
         );
-
+        const current = divRef.current;
         if (divRef.current) {
             observer.observe(divRef.current);
         }
 
         return () => {
-            if (divRef.current) {
-                observer.unobserve(divRef.current);
+            if (current) {
+                observer.unobserve(current);
             }
         };
     }, []);

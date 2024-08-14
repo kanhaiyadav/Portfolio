@@ -29,12 +29,13 @@ const SkillCard = ({ imgPath, name, progress, imgStyle, ...otherProps }) => {
                 threshold: 1,
             }
         );
+        const current = Progress_bar.current;
         if (Progress_bar.current) {
             observer.observe(Progress_bar.current);
         }
         return () => {
-            if (Progress_bar.current) {
-                observer.unobserve(Progress_bar.current);
+            if (current) {
+                observer.unobserve(current);
             }
         };
     }, [Progress_bar]);
