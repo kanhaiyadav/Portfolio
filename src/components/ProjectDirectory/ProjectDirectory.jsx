@@ -36,7 +36,7 @@ const WarningMessage = () => {
     }, []);
     return (
         <div className="inline-block">
-            <i ref={divRef} className={`${isVisible ? 'animate-typewriter5' : ''} animate-typewriter1 text-white overflow-hidden inline-block h-[120px] sm:h-[70px] md:h-[50px] xl:h-5`}>Okay, please don&apos;t laugh too hard 😅, but these are some basic Python projects I whipped up when I first learned to code 🐍. Think of them as my programming training wheels 🚲!</i>
+            <i ref={divRef} className={`${isVisible ? 'animate-typewriter5' : ''} animate-typewriter1 text-white overflow-hidden inline-block h-[120px] sm:h-[70px] md:h-[50px] xl:h-5`}>Okay, please don&apos;t laugh too hard 😅, these are some basic Python projects I whipped up when I first learned to code 🐍. Think of them as my programming training wheels 🚲!</i>
         </div>
     )
 };
