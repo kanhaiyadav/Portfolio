@@ -39,13 +39,13 @@ const ProjectCard = ({ project }) => {
         };
     }, []);
     return (
-        <div ref={divRef} className={`fade-in ${isVisible ? 'visible' : ''} project-card flex flex-col mt-10 xl:mt-0 flex-1 sm:gap-5 p-[10px] sm:p-4 box-content rounded-lg shadow-[10px_10px_0px_1px_rgb(0,0,0)] border-[3px] border-black max-w-[220px] sm:max-w-[265px] md:max-w-[680px] xl:min-w-[510px] xl:w-[43%] max-h-[380px] overflow-auto xl:odd:ml-auto`}
+        <div ref={divRef} className={`fade-in ${isVisible ? 'visible' : ''} project-card flex flex-col mt-10 xl:mt-0 flex-1 sm:gap-5 p-[10px] sm:p-4 box-content rounded-lg shadow-[10px_10px_0px_1px_rgb(0,0,0)] border-[3px] border-black max-w-[220px] sm:max-w-[265px] md:max-w-[680px] xl:min-w-[510px] xl:w-[43%] max-h-[350px] overflow-auto xl:odd:ml-auto`}
             style={{
                 background: 'linear-gradient(145deg, #00101c, #642d19)'
             }}
         >
             <div className="z-10 flex flex-col md:flex-row gap-5 w-full">
-                <div className={`shrink-0 w-[210px] h-[120px] sm:w-[260px] sm:h-[160px] rounded-lg overflow-hidden border-2 border-black group`}
+                <div className={`shrink-0 w-[220px] h-[120px] sm:w-[260px] sm:h-[160px] rounded-lg overflow-hidden border-2 border-black group`}
                     style={{
                         backgroundImage: `url(${path})`,
                         backgroundSize: 'cover',
