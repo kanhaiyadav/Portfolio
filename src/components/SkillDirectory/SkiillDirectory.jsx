@@ -31,7 +31,6 @@ const SkillDirectory = () => {
                         ))
                     }
                 </div>
-            </div>
             <div className="h-1 flex justify-between  gap-3">
                 {
                     AllSkills.map((skill, index) => (
@@ -40,6 +39,7 @@ const SkillDirectory = () => {
                         ></span>
                     ))
                 }
+            </div>
             </div>
         </>
     )
