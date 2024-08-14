@@ -1,27 +1,47 @@
 import SkillCard from "../SkillCard/SkillCard";
 import './SkillDirectory.styles.css';
+import { FaAngleDoubleDown } from "react-icons/fa";
+import { webDev, programmingLanguages, tools } from './SkillData';
+import { useState } from "react";
 
-const SkillDirectory = ({ skill }) => {
-    const { title, icon, Skills } = skill;
-    const repeatedSkills = [...Skills, ...Skills, ...Skills];
+
+const SkillDirectory = () => {
+    const AllSkills = [webDev, programmingLanguages, tools];
+    const [count, setCount] = useState(0);
+    const skill = AllSkills[count % 3]
+    const { title, Skills } = skill;
     return (
-        <div className="flex flex-0 h gap-5 items-center border-white w-full overflow-hidden">
-            <div className="flex-0 h-[160px] bg-[#ff9040] w-[130px] md:w-[200px] shadow-[2px_2px_5px_2px_rgba(0,0,0,0.5)] rounded-3xl flex flex-col items-center justify-center text-center">
-                <div className="">
-                    <img src={icon} alt={title} className="h-[70px]" />
+        <>
+            <div className="flex-1 overflow-auto flex flex-col items-center gap-5 p-4">
+                <div className="flex items-center gap-5">
+                    <h1 className="pb-4 text-xl sm:text-3xl font-Playwrite1 md:text-4xl text-[#c54d20] whitespace-nowrap">{title}</h1>
+                    <span className="h-6 w-6 sm:h-8 sm:w-8 text-white hover:scale-110 hover:bg-white hover:text-black transition duration-300 active:scale-90 shadow-[0px_0px_5px_2px_rgba(0,0,0,0.5)] rounded-full p-2 box-content"
+                        onClick={() => setCount((prev) => {
+                            return prev + 1;
+                        })}
+                    >
+                        <FaAngleDoubleDown className="w-full h-full" />
+                    </span>
                 </div>
-                <h2 className="text-lg md:text-2xl font-semibold font-Open-sans text-[ghostwhite] mb-1">{title}</h2>
-            </div>
-            <div className="flex-1 shadow-[inset_0_0_15px_5px_rgba(0,0,0,0.8)] bg-[#ad7100] hide-x-scrollbar hide-x-scrollbar overflow-scroll p-5 rounded-[15px]">
-                <div className="scroll-wrapper flex gap-8 items-center pr-5">
+
+                <div className="skill-directory pt-4 pb-10 flex justify-center items-center flex-wrap gap-8 w-[320px] sm:w-[600px] md:w-[750px] lg:w-[1000px] min-h-[300px] max-h-[400px] sm:max-h-[500px] sm:h-[500px] md:h-[440px] overflow-auto">
                     {
-                        repeatedSkills.map((skill, index) => (
-                            <SkillCard key={index} imgPath={skill.imgPath} name={skill.name} progress={skill.progress} exp={skill.exp} style={skill.style} imgStyle={skill.imgStyle} />
+                        Skills.map((skill, index) => (
+                            <SkillCard key={index} imgPath={skill.imgPath} name={skill.name} progress={skill.progress} imgStyle={skill.imgStyle} />
                         ))
                     }
                 </div>
+            <div className="h-1 flex justify-between  gap-3">
+                {
+                    AllSkills.map((skill, index) => (
+                        <span key={index} className={`flex-1 cursor-pointer w-[10px] rounded-full ${index == count % 3 ? 'bg-[#c54d20]' : 'bg-white'}`}
+                            onClick={() => setCount(index)}
+                        ></span>
+                    ))
+                }
             </div>
-        </div>
+            </div>
+        </>
     )
 }
 

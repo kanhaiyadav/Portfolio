@@ -1,27 +1,26 @@
 import './About.styles.css';
-import Button from '../button';
+import Button from '../button/button';
 import { PiGithubLogoFill } from "react-icons/pi";
-import RoundIcon from '../RoundIcons';
+import RoundIcon from '../rounded-button/RoundIcons';
 import { FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
 import { ImStackoverflow } from 'react-icons/im';
-import { Link } from 'react-scroll';
 
 const About = () => {
     return (
-        <section id='about' className="overflow-x-hidden min-w-screen bg-no-repeat bg-[url('/stacked-waves-haikei.svg')] bg-cover flex flex-col items-center justify-center min-h-screen relative bg-position p-10">
+        <section id='about' className="overflow-x-hidden min-w-screen bg-no-repeat bg-[url('/stacked-waves-haikei.svg')] bg-cover flex flex-col items-center justify-center md:min-h-screen relative bg-position p-10">
             <div className='max-w-[1100px]'>
-                <h1 className="text-white font-Poppins"
+                <h1 className="text-white font-Poppins text-[40px] sm:text-[50px]"
                     style={{
-                        fontSize: 'clamp(50px, 6vw, 100px)',
+                        fontSize: 'clamp(40px, 6vw, 100px)',
                     }}
                 >So who am i?</h1>
                 <div className='flex flex-col gap-3 font-Open-sans'>
                     <p className="text-[15px] md:text-lg lg:text-xl text-white">
                         Hello! I’m Kanhaiya Yadav, a passionate Full Stack Web Developer currently pursuing
-                        <span className='font-bold text-[#FFD700]'> B.Tech in Computer Science and Engineering</span>, specializing in data science. Expected to
+                        <span className='font-bold text-[#c54d20]'> B.Tech in Computer Science and Engineering</span>, specializing in data science. Expected to
                         graduate in 2026, I am deeply immersed in the world of web development, particularly
-                        with the <span className='font-bold text-[#FFD700]'> MERN (MongoDB, Express.js, React, Node.js)</span> stack.</p>
-                    <p className="text-[15px] md:text-lg lg:text-xl text-white">
+                        with the <span className='font-bold text-[#c54d20]'> MERN (MongoDB, Express.js, React, Node.js)</span> stack.</p>
+                    <p className="hidden sm:block text-[15px] md:text-lg lg:text-xl text-white">
                         I thrive on the excitement of learning new technologies and pushing the boundaries of
                         my skills. My journey into web development has been driven by a love for creating seam
                         less, user-friendly applications that make a difference. From building dynamic,
@@ -35,14 +34,18 @@ const About = () => {
 
                 <div className='flex flex-col md:flex-row gap-10 justify-between items-center mt-5'>
                     <div className='flex items-center gap-5'>
-                        <a href={'/Kanhaiya Resume v4.pdf'} download={"Kanhaiya's resume"} className='flex items-center gap-2 cursor-default bg-[#aa00aa] text-white hover:text-white rounded-lg p-3 shadow-[5px_5px_0px_1px_rgba(0,0,0)] hover:bg-blue-600 hover:scale-110 transition-[transform] border-2 border-black text-lg'>My Resume</a>
-                        <Link to='contact' smooth duration={600}><Button className={'bg-[#aa00aa] hover:bg-blue-500'}>Contact Me</Button></Link>
+                        <a href={'/Kanhaiya Resume v4.pdf'} download={"Kanhaiya's resume"} ><Button>My Resume</Button></a>
+                        <Button
+                            onClick={() => {
+                                document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+                            }}
+                        >Contact Me</Button>
                     </div>
-                    <div className='flex gap-10'>
-                        <RoundIcon linkto={'https://www.linkedin.com/in/kanhaiya2004yadav/'} className="hover:scale-110 bg-[#0077B5] group"><FaLinkedinIn className='text-3xl text-white group-hover:text-white' /></RoundIcon>
-                        <RoundIcon linkto={'https://github.com/kanishy'} className="hover:scale-110 bg-white"><PiGithubLogoFill className='text-3xl text-black' /></RoundIcon>
-                        <RoundIcon linkto={'https://www.facebook.com/profile.php?id=61563497158287'} className="hover:scale-110 bg-[#1877F2]"><FaFacebookF className='text-3xl text-white' /></RoundIcon>
-                        <RoundIcon linkto={'https://stackoverflow.com/users/22740986'} className="group hover:scale-110 bg-white"><ImStackoverflow className='text-3xl text-[#F58025]' /></RoundIcon>
+                    <div className='button-container flex gap-10'>
+                        <RoundIcon linkto={'https://www.linkedin.com/in/kanhaiya2004yadav/'}><FaLinkedinIn/></RoundIcon>
+                        <RoundIcon linkto={'https://github.com/kanishy'}><PiGithubLogoFill/></RoundIcon>
+                        <RoundIcon linkto={'https://www.facebook.com/profile.php?id=61563497158287'}><FaFacebookF/></RoundIcon>
+                        <RoundIcon linkto={'https://stackoverflow.com/users/22740986'}><ImStackoverflow/></RoundIcon>
                     </div>
                 </div>
             </div>
