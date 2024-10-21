@@ -1,7 +1,11 @@
+import { Link } from 'react-router-dom';
 import './SkillCard.styles.css';
 import { useEffect, useRef } from 'react';
 
-const SkillCard = ({ imgPath, name, progress, imgStyle, ...otherProps }) => {
+const SkillCard = ({ imgPath, name, progress, imgStyle, documentation, ...otherProps }) => {
+
+    console.log(documentation);
+    
     let progressColor;
     if (progress < 25) {
         progressColor = '#ff0000';
@@ -14,6 +18,8 @@ const SkillCard = ({ imgPath, name, progress, imgStyle, ...otherProps }) => {
     } else {
         progressColor = '#00b7ff';
     }
+
+    
     const Progress_bar = useRef(null);
     useEffect(() => {
         const observer = new IntersectionObserver(
@@ -40,7 +46,8 @@ const SkillCard = ({ imgPath, name, progress, imgStyle, ...otherProps }) => {
         };
     }, [Progress_bar]);
     return (
-        <div className="shrink-0 skill-card flex flex-col items-center gap-3 p-3 rounded-sm shadow-[0px_0px_10px_3px_rgba(0,0,0,0.5)] w-[100px] sm:w-[150px] md:w-[200px]" {...otherProps}>
+        <Link  to={documentation} target='_blank' rel='noreferrer'
+            className="shrink-0 skill-card flex flex-col items-center gap-3 p-3 rounded-sm shadow-[0px_0px_10px_3px_rgba(0,0,0,0.5)] w-[100px] sm:w-[150px] md:w-[200px]" {...otherProps}>
             <div className="h-[60px] w-[60px] sm:h-[80px] sm:w-[80px] md:h-[100px] md:w-[100px]" style={imgStyle}>
                 <img src={imgPath} alt={name} className="h-full w-full rounded-xl" />
             </div>
@@ -51,7 +58,7 @@ const SkillCard = ({ imgPath, name, progress, imgStyle, ...otherProps }) => {
                 >
                 </div>
             </div>
-        </div>
+        </Link>
     );
 }
 

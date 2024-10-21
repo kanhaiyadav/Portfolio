@@ -6,7 +6,8 @@ export const webDev = {
             imgPath: '/react.png',
             name: 'React',
             progress: 85,
-            imgStyle: {borderRadius: '13px', border: '2px solid #00d8ff' }
+            imgStyle: {borderRadius: '13px', border: '2px solid #00d8ff' },
+            documentation: 'https://reactjs.org/docs/getting-started.html'
         },
         {
             imgPath: '/nodejs.png',
@@ -17,52 +18,61 @@ export const webDev = {
                 borderRadius: '20px',
                 border: '3px solid #026e00',
                 padding: '5px'
-            }
+            },
+            documentation: 'https://nodejs.org/en/docs/'
         },
         {
             imgPath: '/Express.png',
             name: 'Express',
             progress: 70,
-            imgStyle: { borderRadius: '22px', backgroundColor: '#343434',paddingTop:'5px', border: '2px solid #fff' }
+            imgStyle: { borderRadius: '22px', backgroundColor: '#343434',paddingTop:'5px', border: '2px solid #fff' },
+            documentation: 'https://expressjs.com/en/starter/installing.html'
         },
         {
             imgPath: '/mySql.png',
             name: 'MySql',
             progress: 80,
-            imgStyle: { backgroundColor: 'white', borderRadius: '20px', border: '3px solid #01618b', padding:'2px' }
+            imgStyle: { backgroundColor: 'white', borderRadius: '20px', border: '3px solid #01618b', padding:'2px' },
+            documentation: 'https://dev.mysql.com/doc/'
         },
         {
             imgPath: '/mongodb.png',
             name: 'MongoDB',
             progress: 60,
+            documentation: 'https://docs.mongodb.com/'
         },
         {
             imgPath: '/GraphQL.png',
             name: 'GraphQL',
             progress: 70,
-            imgStyle: { backgroundColor: 'white', borderRadius: '20px', padding: '5px', border: '2px solid #e10098' }
+            imgStyle: { backgroundColor: 'white', borderRadius: '20px', padding: '5px', border: '2px solid #e10098' },
+            documentation: 'https://graphql.org/learn/'
         },
         {
             imgPath: '/Socket.io.png',
             name: 'Socket.io',
             progress: 85,
-            imgStyle: { backgroundColor: 'white', borderRadius: '20px', padding: '5px', border:'3px solid black' }
+            imgStyle: { backgroundColor: 'white', borderRadius: '20px', padding: '5px', border:'3px solid black' },
+            documentation: 'https://socket.io/docs/v4/'
         },
         {
             imgPath: '/tailwind.jpg',
             name: 'Tailwind',
             progress: 80,
-            imgStyle: { borderRadius: '13px', border: '3px solid #00d8ff' }
+            imgStyle: { borderRadius: '13px', border: '3px solid #00d8ff' },
+            documentation: 'https://tailwindcss.com/docs'
         },
         {
             imgPath: '/html.png',
             name: 'HTML',
             progress: 80,
+            documentation: 'https://developer.mozilla.org/en-US/docs/Web/HTML'
         },
         {
             imgPath: '/css.png',
             name: 'CSS',
             progress: 93,
+            documentation: 'https://developer.mozilla.org/en-US/docs/Web/CSS'
         }
     ]
 }

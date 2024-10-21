@@ -3,6 +3,7 @@ import './ProjectCard.styles.css';
 import { FaEye } from 'react-icons/fa';
 import { LuCode2 } from "react-icons/lu";
 import Technology from "../technology";
+import { technologies as techs } from "../ProjectDirectory/ProjectData";
 
 const ProjectCard = ({ project }) => {
     const { path, imgPath, title, description, preview, source, technologies } = project;
@@ -39,7 +40,10 @@ const ProjectCard = ({ project }) => {
         };
     }, []);
     return (
-        <div ref={divRef} className={`fade-in ${isVisible ? 'visible' : ''} project-card flex flex-col mt-10 xl:mt-0 flex-1 sm:gap-5 p-[10px] sm:p-4 box-content rounded-lg shadow-[10px_10px_0px_1px_rgb(0,0,0)] border-[3px] border-black max-w-[220px] sm:max-w-[265px] md:max-w-[680px] xl:min-w-[510px] xl:w-[43%] max-h-[350px] overflow-auto xl:odd:ml-auto`}
+        <div ref={divRef} className={`fade-in ${isVisible ? 'visible' : ''} project-card flex flex-col items-center
+         mt-10 xl:mt-0 flex-1 sm:gap-5 p-[10px] sm:p-4 box-content rounded-lg shadow-[10px_10px_0px_1px_rgb(0,0,0)]
+          border-[3px] border-black max-w-[220px] sm:max-w-[265px] md:max-w-[680px] xl:min-w-[510px]
+           xl:w-[43%] max-h-[350px] overflow-auto xl:odd:ml-auto`}
             style={{
                 background: 'linear-gradient(145deg, #00101c, #642d19)'
             }}
@@ -68,10 +72,10 @@ const ProjectCard = ({ project }) => {
                     </div>
                 </div>
             </div>
-            <div className="flex w-full flex-1 gap-2 flex-wrap">
+            <div className="flex w-[95%] flex-1 gap-2 flex-wrap">
                 {
                     technologies.map((tech, index) => (
-                        <Technology key={index}>{tech}</Technology>
+                        <Technology key={index} tech={techs[tech]} />
                     ))
                 }
             </div>

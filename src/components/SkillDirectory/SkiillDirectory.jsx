@@ -27,7 +27,7 @@ const SkillDirectory = () => {
                 <div className="skill-directory pt-4 pb-10 flex justify-center items-center flex-wrap gap-8 w-[320px] sm:w-[600px] md:w-[750px] lg:w-[1000px] min-h-[300px] max-h-[400px] sm:max-h-[500px] sm:h-[500px] md:h-[440px] overflow-auto">
                     {
                         Skills.map((skill, index) => (
-                            <SkillCard key={index} imgPath={skill.imgPath} name={skill.name} progress={skill.progress} imgStyle={skill.imgStyle} />
+                            <SkillCard key={index} {...skill} />
                         ))
                     }
                 </div>

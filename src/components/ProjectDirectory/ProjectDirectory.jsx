@@ -3,7 +3,7 @@ import './project-directory.css';
 import { RiPlaneLine } from "react-icons/ri";
 import { useState, useEffect, useRef } from "react";
 import { FaAngleDoubleDown } from "react-icons/fa";
-import { web, python } from "./ProjectData";
+import { web, python} from "./ProjectData";
 
 const WarningMessage = () => {
     const [isVisible, setIsVisible] = useState(false);
