@@ -1,5 +1,5 @@
 import P from "./AnimatedText"
-import myImage from "/me4.png"
+// import myImage from "/me4.png"
 import myImage2 from "/me5.png"
 
 const Home = () => {
@@ -34,7 +34,7 @@ const Home = () => {
                         height: 'clamp(250px, 22vw, 500px)',
                     }}
                 >
-                        <img src={myImage} alt="kanhaiya" className='group-hover:hidden' />
+                        <img src='/me4.png' alt="kanhaiya" className='group-hover:hidden' />
                         <img src={myImage2} alt="kanhaiya" className='' />
                 </div>
             </div>
