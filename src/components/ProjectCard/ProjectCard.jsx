@@ -51,7 +51,7 @@ const ProjectCard = ({ project }) => {
             <div className="z-10 flex flex-col md:flex-row gap-5 w-full">
                 <div className={`shrink-0 w-[220px] h-[120px] sm:w-[260px] sm:h-[160px] rounded-lg overflow-hidden border-2 border-black group`}
                     style={{
-                        backgroundImage: `url(${path})`,
+                        backgroundImage: `url(/${path})`,
                         backgroundSize: 'cover',
                     }}
                 >
@@ -63,7 +63,7 @@ const ProjectCard = ({ project }) => {
                 <div>
                     <div className="flex items-center gap-2 mt-2">
                             <div className="w-[40px] h-[40px] border-2 border-[#c54d20] rounded-full overflow-hidden p-1 shadow-[1px_1px_4px_2px_rgba(0,0,0,0.9)]">
-                            <img src={imgPath} alt="icon" className="h-full rounded-full" />
+                            <img src={`/${imgPath}`} alt="icon" className="h-full rounded-full" />
                         </div>
                         <h2 className="text-2xl font-semibold text-[#c54d20]">{title}</h2>
                     </div>
