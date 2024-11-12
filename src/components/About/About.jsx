@@ -34,7 +34,7 @@ const About = () => {
 
                 <div className='flex flex-col md:flex-row gap-10 justify-between items-center mt-5'>
                     <div className='flex items-center gap-5'>
-                        <a href={'/Kanhaiya Resume v4.pdf'} download={"Kanhaiya's resume"} ><Button>My Resume</Button></a>
+                        <a href={'/My-Resume.pdf'} download={"Kanhaiya's resume"} ><Button>My Resume</Button></a>
                         <Button
                             onClick={() => {
                                 document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
@@ -43,7 +43,7 @@ const About = () => {
                     </div>
                     <div className='button-container flex gap-10'>
                         <RoundIcon linkto={'https://www.linkedin.com/in/kanhaiya2004yadav/'}><FaLinkedinIn/></RoundIcon>
-                        <RoundIcon linkto={'https://github.com/kanishy'}><PiGithubLogoFill/></RoundIcon>
+                        <RoundIcon linkto={'https://github.com/kanhaiyadav'}><PiGithubLogoFill/></RoundIcon>
                         <RoundIcon linkto={'https://www.facebook.com/profile.php?id=61563497158287'}><FaFacebookF/></RoundIcon>
                         <RoundIcon linkto={'https://stackoverflow.com/users/22740986'}><ImStackoverflow/></RoundIcon>
                     </div>

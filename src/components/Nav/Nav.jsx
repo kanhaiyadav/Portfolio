@@ -17,12 +17,12 @@ const Nav = () => {
         >
             <div className="list-none flex flex-row gap-5 text-black text-lg">
                 <NavItem index={index} setIndex={setIndex} name='home'>
-                    <IoHome className={`inline-block lg:inline-block md:hidden lg:text-2xl text-lg`} 
+                    <IoHome className={`inline-block lg:inline-block md:hidden sm:text-2xl text-lg`} 
                         style={{
                             display: `${index === 'home' ? 'inline-block' : ''}`
                         }}
                     />
-                    <span className={`hidden md:inline-block font-semibold lg:text-lg text-sm`}
+                    <span className={`hidden md:inline-block font-semibold sm:text-lg text-sm`}
                         style={{
                             display: `${index === 'home' ? 'inline-block' : ''}`
                         }}
@@ -30,12 +30,12 @@ const Nav = () => {
                 </NavItem>
 
                 <NavItem index={index} setIndex={setIndex} name='about'>
-                    <FaIdCard className={`inline-block lg:inline-block md:hidden lg:text-2xl text-lg`} 
+                    <FaIdCard className={`inline-block lg:inline-block md:hidden sm:text-2xl text-lg`} 
                         style={{
                             display: `${index === 'about' ? 'inline-block' : ''}`
                         }}
                     />
-                    <span className={`hidden md:inline-block font-semibold lg:text-lg text-sm`}
+                    <span className={`hidden md:inline-block font-semibold sm:text-lg text-sm`}
                         style={{
                             display: `${index === 'about' ? 'inline-block' : ''}`
                         }}
@@ -43,12 +43,12 @@ const Nav = () => {
                 </NavItem>
 
                 <NavItem index={index} setIndex={setIndex} name='skills'>
-                    <BsTools className={`inline-block lg:inline-block md:hidden lg:text-2xl text-lg`} 
+                    <BsTools className={`inline-block lg:inline-block md:hidden sm:text-2xl text-lg`} 
                         style={{
                             display: `${index === 'skills' ? 'inline-block' : ''}`
                         }}
                     />
-                    <span className={`hidden md:inline-block font-semibold lg:text-lg text-sm`}
+                    <span className={`hidden md:inline-block font-semibold sm:text-lg text-sm`}
                         style={{
                             display: `${index === 'skills' ? 'inline-block' : ''}`
                         }}
@@ -56,12 +56,12 @@ const Nav = () => {
                 </NavItem>
 
                 <NavItem index={index} setIndex={setIndex} name='projects'>
-                    <FaLaptopCode className={`inline-block lg:inline-block md:hidden lg:text-2xl text-lg $`} 
+                    <FaLaptopCode className={`inline-block lg:inline-block md:hidden sm:text-2xl text-lg $`} 
                         style={{
                             display: `${index === 'projects' ? 'inline-block' : ''}`
                         }}
                     />
-                    <span className={`hidden md:inline-block font-semibold lg:text-lg text-sm`}
+                    <span className={`hidden md:inline-block font-semibold sm:text-lg text-sm`}
                         style={{
                             display: `${index === 'projects' ? 'inline-block' : ''}`
                         }}
@@ -69,12 +69,12 @@ const Nav = () => {
                 </NavItem>
 
                 <NavItem index={index} setIndex={setIndex} name='contact'>
-                    <MdEmail className={`inline-block lg:inline-block md:hidden lg:text-2xl text-lg `} 
+                    <MdEmail className={`inline-block lg:inline-block md:hidden sm:text-2xl text-lg `} 
                         style={{
                             display: `${index === 'contact' ? 'inline-block' : ''}`
                         }}
                     />
-                    <span className={`hidden md:inline-block font-semibold lg:text-lg text-sm`}
+                    <span className={`hidden md:inline-block font-semibold sm:text-lg text-sm`}
                         style={{
                             display: `${index === 'contact' ? 'inline-block' : ''}`
                         }}

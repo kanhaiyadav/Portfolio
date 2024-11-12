@@ -13,7 +13,7 @@ const Projects = () => {
                 background: 'linear-gradient(#642d19, #00101c)'
             }}
         >
-            <h1 className="text-4xl md:text-5xl  ml-10 mb-8 text-white font-Poppins">My Projects</h1>
+            <h1 className="text-4xl md:text-5xl mb-8 text-white font-Poppins">My Projects</h1>
             <ProjectDirectory className='m-2' />
         </section>
     );

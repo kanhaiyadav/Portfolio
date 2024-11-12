@@ -105,7 +105,7 @@ const ContactForm = () => {
                         <Button type="submit" className="flex text-lg items-center gap-2 bg-[#873a06] hover:bg-[#985c28] cursor-default">Send Message <IoSend /></Button>
                         <div className='button-container flex gap-10 mt-2'>
                             <RoundIcon linkto={'https://www.linkedin.com/in/kanhaiya2004yadav/'}><FaLinkedinIn /></RoundIcon>
-                            <RoundIcon linkto={'https://github.com/kanishy'}><PiGithubLogoFill /></RoundIcon>
+                            <RoundIcon linkto={'https://github.com/kanhaiyadav'}><PiGithubLogoFill /></RoundIcon>
                             <RoundIcon linkto={'https://www.facebook.com/profile.php?id=61563497158287'}><FaFacebookF /></RoundIcon>
                             <RoundIcon linkto={'https://stackoverflow.com/users/22740986'}><ImStackoverflow /></RoundIcon>
                         </div>

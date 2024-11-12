@@ -9,7 +9,7 @@ const Skills = () => {
                 background: 'linear-gradient(#00101c, #642d19)'
             }}
         >
-            <h1 className="text-4xl md:text-5xl  ml-10 text-white font-Poppins">My Skillset</h1>
+            <h1 className="text-4xl md:text-5xl text-white font-Poppins">My Skillset</h1>
             <SkillDirectory/>
         </section>
     );
