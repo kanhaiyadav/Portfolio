@@ -2,8 +2,8 @@ export const web = {
     name: 'web',
     projects: [
         {
-            path: '/converza.png',
-            imgPath: '/converza_icon.png',
+            path: 'converza.png',
+            imgPath: 'converza_icon.png',
             title: 'Converza',
             description: 'A chat application with core features. It is a full stack project with a beautiful and responsive design.',
             preview: 'https://converza.vercel.app/',
@@ -11,8 +11,8 @@ export const web = {
             technologies: [ 5, 0, 1, 2, 3, 4 ]
         },
         {
-            path: '/todoApp.png',
-            imgPath: '/icon.png',
+            path: 'todoApp.png',
+            imgPath: 'icon.png',
             title: 'YourCheckMate',
             description: 'A simple todo app with all necessary features. It is a full stack project with a beautiful and responsive design.',
             preview: 'https://yourcheckmate.netlify.app/',
@@ -20,8 +20,8 @@ export const web = {
             technologies: [ 0, 1, 2, 3, 4 ]
         },
         {
-            path: '/portfolio.png',
-            imgPath: '/myLogo.jpeg',
+            path: 'portfolio.png',
+            imgPath: 'myLogo.jpeg',
             title: 'My Portfolio',
             description: 'A simple portfolio website with beautiful and responsive design.',
             source: 'https://github.com/kanishy/Portfolio',
