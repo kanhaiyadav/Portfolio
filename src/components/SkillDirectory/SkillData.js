@@ -86,11 +86,13 @@ export const programmingLanguages = {
             name: 'Python',
             progress: 90,
             documentation: 'https://docs.python.org/3/'
+            documentation: 'https://docs.python.org/3/'
         },
         {
             imgPath: 'c-.png',
             name: 'C++',
             progress: 90,
+            documentation: 'https://en.cppreference.com/w/'
             documentation: 'https://en.cppreference.com/w/'
         },
         {
@@ -98,11 +100,13 @@ export const programmingLanguages = {
             name: 'C',
             progress: 95,
             documentation: 'https://en.cppreference.com/w/c'
+            documentation: 'https://en.cppreference.com/w/c'
         },
         {
             imgPath: 'js.png',
             name: 'JavaScript',
             progress: 65,
+            documentation: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript'
             documentation: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript'
         }
     ]
@@ -117,17 +121,20 @@ export const tools = {
             name: 'Git',
             progress: 70,
             documentation: 'https://git-scm.com/doc'
+            documentation: 'https://git-scm.com/doc'
         },
         {
             imgPath: 'Postman.png',
             name: 'Postman',
             progress: 73,
             documentation: 'https://learning.postman.com/docs/getting-started/introduction/'
+            documentation: 'https://learning.postman.com/docs/getting-started/introduction/'
         },
         {
             imgPath: 'github.png',
             name: 'GitHub',
             progress: 75,
+            documentation: 'https://docs.github.com/en'
             documentation: 'https://docs.github.com/en'
         }
     ]
